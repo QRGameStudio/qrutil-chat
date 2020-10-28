@@ -1,0 +1,37 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    width: 100vw;
+    height: 100vh;
+    background: var(--theme-primary, white);
+    color: var(--theme-contrast, black);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.remote {
+    text-align: right;
+}
+
+.chat-window {
+    flex-grow: 1;
+}
+
+.new-message {
+    display: flex;
+}
+
+#input {
+    flex-grow: 1;
+}
