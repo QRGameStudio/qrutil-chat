@@ -42,10 +42,12 @@ async function startNewChat() {
     const selectedId = (await friends.getFriends())[selected];
     console.log('Selected', selected, selectedId);
 
-    const modal = new ModalService();
+    const modal = new GModal();
 
     multiplayer.connect(selectedId, onMessage).then((c) => {
         if(c) {
+            const overlay = document.querySelector('.initial-overlay');
+            overlay.parentElement.removeChild(overlay);
             addMessage('Chat started', true);
             connection = c;
         } else {

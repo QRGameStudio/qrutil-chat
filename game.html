@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <title>Chat</title>
-    <meta name="gi" content="qr.util.chat">
-    <meta name="gv" content="0.99.99">
+    <meta name="gi" content="qrs.util.chat">
+    <meta name="gv" content="1.0">
     <meta name="gs" content="VQNDSHEO">
     <meta name="gf" content="no">
     <meta name="gc" content="util">
@@ -15,12 +15,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<button id="startNewChat">Start new chat</button>
 <div class="chat-window"></div>
 <div class="new-message">
     <label for="input" style="display: none">New message input</label>
     <textarea id="input" placeholder="Your message goes here"></textarea>
     <button id="send" class="btn btn-primary">Send</button>
+</div>
+<div class="initial-overlay">
+    <button class="btn" id="startNewChat">Start new chat</button>
 </div>
 </body>
 </html>

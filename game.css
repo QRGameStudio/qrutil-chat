@@ -4,11 +4,14 @@ html {
     font-family: monospace;
     width: 100vw;
     height: 100vh;
-    background: var(--theme-primary, white);
-    color: var(--theme-contrast, black);
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+* {
+    background: var(--theme-primary, white) !important;
+    color: var(--theme-contrast, black) !important;
 }
 
 body {
@@ -34,4 +37,18 @@ body {
 
 #input {
     flex-grow: 1;
+}
+
+.initial-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#startNewChat {
+    font-size: 40px;
+    width: 100%;
 }
